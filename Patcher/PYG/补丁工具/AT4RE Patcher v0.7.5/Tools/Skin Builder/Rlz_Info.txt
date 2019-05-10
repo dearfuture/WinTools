@@ -1,0 +1,126 @@
+         Skin Builder Coded by Agmcz & Sn!per X ^ AT4RE.
+     _______________________________________________________
+  SB is a tool that enables you to build Skins for AT4RE Patcher.
+___________________________________________________________________
+v0.7
+03-01-2017:
+[+] Improved capturing screenshot.
+[+] Add New Buttons (Left and Right / Up and Down) for Multi Software Patch.
+___________________________________________________________________
+v0.6.1
+25-11-2015:
+[x] Minor bug fixes and enhancements.
+___________________________________________________________________
+v0.6:
+22-10-2015:
+[+] Added Option to Disable Text (Software, Author, Website, Date): [None].
+[+] Skin version upgraded to v0.6.
+[+] Added Support for Modules:
+       ASC Sound Master (ASC).
+       Flash Tracker (FLS).
+       Fast Tracker (FTC).
+       Global Tracker (GTR).
+       Sound Tracker (STC).
+       Sound Tracker Pro (STP).
+       Pro Sound Creator (PSC).
+       Pro Sound Maker (PSM).
+       Pro Tracker 1 (PT1).
+       Pro Tracker 2 (PT2).
+       Pro Tracker 3 (PT3).
+       SQ-Tracker (SQT).
+       ST-Sound files (YM).
+       ASM Music Editor (ASC).
+       Emulators files (PSG).
+[x] Fixed Crash when user stop playing the music.
+[x] Fixed some modal handles.
+[x] Minor bug fixes and enhancements..
+___________________________________________________________________
+v0.5:
+18-09-2015:
+[x] Various Bug Fixes and Enhancements..
+- Major changes upcoming in v0.6..
+___________________________________________________________________
+v0.4:
+04-09-2015:
+[+] Added Support for SPC, YM Modules.
+[x] Fixed FadeIn/FadeOut speed issue.
+[x] Fixed bug in v2m Player.
+[x] Fixed a crash happen when droping a font under Windows 10.
+___________________________________________________________________
+v0.3:
+19-07-2015:
+[+] Added Support for (MOD, IT, S3M, MTM, UMX, MID & SID) Modules.
+[+] Added Command line support, just drag & drop the skn over the SB executable.
+[+] Added more v2m signatures (for better detection).
+[+] Now user can choose a directory for saving the Skin/Preview files.
+[!] Fixed Fade In/Out Loop sequence when user changes speed from 5 to 10.
+[!] Crash Fix when user paste skn file from a non regular named folder (Unicode Issue).
+[!] Crash Fix with loading modules when no Background/Frame used.
+[!] Crash Fix: happen when user drops a folder not a file.
+[!] Fixed a bug happen for some animated cursors doesn't appear correcltly.
+[!] No more using extract to temp-directory now all skin data is stored in memory.
+    And many more bug fixes, enhancements..
+___________________________________________________________________
+v0.2:
+Build 503:
+03-05-2015:
+[!] Fixed Move Buttons.
+[+] Added Support For V2M.
+[+] Text Alignement (Left, Center and Right) Enhanced:
+* So Now the Drawn text is in a virtual Panel:
+               ___________________________
+              |AT4RE                      | [Left]
+              |___________________________|
+               ___________________________
+              |            AT4RE          | [Center]
+              |___________________________|
+               ___________________________
+              |                      AT4RE| [Right]
+              |___________________________|
+
+* If User doesn't want to use a particular text for example: THE DATE, so he must use [None] Option.
+__________________________________________________________________
+Skin Builder v0.1
+__________________________________________________________________
+Build 422
+22-04-2015
+[+] Easy to use GUI.
+[+] Full Support For JPG, PNG, BMP ..
+[+] Added Scroll Text Edge Transeparency.
+[+] Full Support for: .TTF and .FON Fonts.
+[+] Support for V2M and XM Music Modules. 
+[+] Added Fade in/out Speed Option.
+[+] Added Take Preview Image Option.
+[+] Added Support for Animated Cursors.
+[+] Added Scroll Text Left To Right; Right To Left Option.
+[+] Added TopMost Option.
+[+] Added Font Styles: Bold, Italic, Underline and Strikeout.
+[+] and many more..
+[!] Fixed alot of bugs :D
+___________________________________________________________________
+24-02-2015
+[+] Fixed bug with sreenshot under Windows XP.
+[+] Enhanced Fade In and Fade Out.
+[+] Added Support for .FON and most other fonts.
+[+] Enhance Drawing Scroll Text: Now should be less flickers and less memory usage.
+[+] Added Font Syles (Bold, Italic, Underline and StrikeOut) if the font has styles..
+[+] Added Font Size Option.
+[+] Fixed Resizing Scroll Text, now it should be more easier ;)
+[+] Fixed alot of drag and drop detections.
+[+] and many more, discover by yoursef :p
+___________________________________________________________________
+05-02-2015:
+  [+] Supported Skin Images: BMP, JPG, PNG, GIF, TIF and Exif.
+    - Multi Type of images can be used in same patch:
+      For example: we can use a PNG Frame with a BMP Buttons.
+  [+] Smooth Scroll Text with Semi-Transparent Edges.
+  [+] Support for Region (.rgn) for non standard forms.
+  [+] Skin Supports Fade In / Fade Out when open and close.
+  [+] Skin Music Supports Fade In / Fade Out when open and close.
+  [+] Very Lower Memory and CPU Usage.
+  [+] User can user a customized Cursors.
+  [+] User can user a customized icon.
+
+  Known Bugs:
+  [!] Some Fonts are not supported yet!. we are working on that.
+___________________________________________________________________

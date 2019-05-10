@@ -1,0 +1,26 @@
+{ * 传入eax与位移次数 算术右移后返回 }
+function SAR(eax: DWORD; n: Byte): DWORD;
+{ * 传入eax与位移次数 算术左移后返回 }
+function SAL(eax: DWORD; n: Byte): DWORD;
+{ * 传入数10进制值、需要输出的长度 转换成16进制字符串后返回 }
+function IntToHex(Value: Integer; Digits: Integer): string;
+{ * 传入16进制字符 转换成10进制数值后返回 }
+function HexCharToInt(const S: String): Cardinal;
+{ * 传入16进制字符串 转换成10进制数值后返回 }
+function HexToInt(S: string): Cardinal;
+{ * 传入字符串 转换ASCII字符后返回 }
+function HexToAsc(strData: AnsiString): AnsiString;
+{ * 传入明文字符串 转换成16进制字符串后返回 }
+function StrToHex(const sourstr: string): string;
+{ * 传入16进制字符串 转换成明文字符串后返回 }
+function HexToStr(const sourstr: string): string;
+{ * 传入明文 MD5 加密返回密文 }
+function MD5(Str: String): String;
+{ * 传入明文 Base64 加密返回密文 }
+function Base64Encrypt(Str: AnsiString): AnsiString;
+{ * 传入密文 Base64 加密返回明文 }
+function Base64Decrypt(Str: AnsiString): AnsiString;
+{ * 传入明文与加密 Key，DES 加密返回密文 }
+function DESEncrypt(Str, Key: AnsiString): AnsiString;
+{ * 传入密文与加密 Key，DES 解密返回明文 }
+function DESDecrypt(Str, Key: AnsiString): AnsiString;

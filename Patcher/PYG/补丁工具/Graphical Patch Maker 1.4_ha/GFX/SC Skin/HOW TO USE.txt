@@ -1,0 +1,1 @@
+If you want to use this skin, juste copy all files in this folder into the PATCH\SKIN Folder

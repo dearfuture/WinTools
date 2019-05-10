@@ -1,0 +1,51 @@
+                       uPPP2AP Skin Converter Coded by Agmcz and Sn!per X
+                    ________________________________________________________
+                       A small tool to convert uPPP iNi Skins to AP Skins 
+===========================================================================================================
+v0.3:
+18-03-2017:
+[x] Fixed get font size for some target uPPP Skins.
+[x] Fixed false-positive detection for some lame Anti-Viruses.
+[x] Other bug fixes and enhancements..
+===========================================================================================================
+v0.2:
+22-10-2015:
+[x] Minor bug fixes and enhancements..
+===========================================================================================================
+v0.1 Build 30:
+30-04-2015:
+[x] Fixed uPPP Music/Backup PNG Buttons was not flipped correctly. 
+[x] Fixed widestring file path.
+===========================================================================================================
+v0.1:
+24-04-2015:
+[+] Music and Backup PNGs are flipped updside down to fit AP Requirements (See Figures 01 and 02).
+[+] Command Line Support: uPPP2AP [Ini File Path] [Destination Folder]
+    Destination Folder can be an empty string '' if you want to save converted skin to converter root folder.
+    For easier use: just drag and drop the INI file over uPPP2AP.exe file and all done.
+
+[!] Support for iNi Skins are 99% Complete, one more step needed to be ready:
+    Firstly do not use the converted skin directly, Drop it to Skin Builder and click "Save Skin"
+    now the skin is final, we do that because some of skin file coordinates need to be recalculated.
+
+[!] You should not mess arround with iNi contenents or you'll get very badly behavior from the tool :p
+    For better results use only the Skin Helper.eXe to modify the ini file.
+
+[!] The resulting Info.skn conversion back to iNi are not available ;)
+____________________________________________________________________________________________________________
+uPPP Music/Backup PNG Button Structure:
+-----------
+|UNCHECKED |
+-----------
+-----------      <----------- Figure 01.
+| CHECKED |
+-----------
+
+AP Music/Backup PNG Button Structure:
+-----------
+| CHECKED |
+-----------      <----------- Figure 02.
+-----------
+|UNCHECKED|
+-----------
+===========================================================================================================

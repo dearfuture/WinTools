@@ -1,0 +1,21 @@
+                     Image Flipper Coded by Agmcz and Sn!per X
+                      ________________________________________
+                      A small tool to flip images upside down.
+====================================================================================================
+v0.1:
+06-05-2015:
+[+] Flip Image (JPG, BMP, PNG) upside down without using PS or any other Image Editor. 
+[+] Command Line Support: "Image Flipper" [Image File Path] [Destination Folder]
+    Destination Folder can be an empty string '' if you want to save flipped image to tool root folder.
+    For easier use: just drag and drop the image file over IMAGE_FLIPPER.exe file and all done.
+Input:
+ -----------
+|     A     |
+|     B     |  Image.png
+ -----------
+Output:
+ -----------
+|     B     |
+|     A     | Flipped.png
+ -----------
+====================================================================================================

@@ -1,0 +1,3 @@
+1.将 A.dll 放到OD插件目录
+2.将 TX.exe和Patch.ini放在OD目录
+3.配置Patch.ini

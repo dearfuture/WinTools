@@ -1,0 +1,251 @@
+<title>Graphical-PatchMaker</title>
+<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#0000FF" alink="#0000FF">
+<div align="center"> 
+  <p><b>Graphical-PatchMaker<br>
+    </b></p>
+  <p align="left">&nbsp;</p>
+  <p align="left"><b>Presentation :</b></p>
+  <p align="left">Graphical-PatchMaker est un programme qui genere des patchs 
+    avec interface graphique et lecteur de musique XM integr&eacute;. Les patchs 
+    g&eacute;n&eacute;r&eacute;s sont destin&eacute;s &agrave; modifier n'importe 
+    quel fichier pour lesquels ils ont &eacute;t&eacute; pr&eacute;par&eacute;s. 
+  </p>
+  <p align="left">Graphical-PatchMaker se compose d'une interface permettant de 
+    comparer 2 fichiers, l'original et la copie qui contient les modifications. 
+    Toutes les modifications par rapport au fichier original seront relev&eacute;es 
+    et ins&eacute;r&eacute;es dans le Patch.</p>
+  <p align="left">De plus, de cette fonction premiere, les Patchs pourront prendre 
+    l'apparence voulue selon un system de Skin et inclure des musiques au format 
+    XM qui seront jou&eacute;s automatiquement. Les patchs possedent aussi un 
+    petit scrolling, qui permet d'ajouter le text que l'on souhaite. Les modifications 
+    suivantes sont possibles :</p>
+  <p align="left">- Couleurs des Textes<br>
+    - Contenus des Textes<br>
+    - Couleur de Fond du scrolling<br>
+    - Taille du Dessin qui representera l'interface<br>
+    - Selection de la musique &agrave; inclure</p>
+  <p align="left">&nbsp;</p>
+  <p align="left"><b>Musique:</b></p>
+  <p align="left">Pour inclure une musique dans le patch il suffit de selectionner 
+    une musique XM via le Pathmaker et de lancer la compilation du Patch (BUILD). 
+    Attention a ne pas choisir des musiques trop lourde, la taille final du patch 
+    en sera directement affect&eacute;. Pour ne pas inclure de musique il suffira, 
+    dans le dossier PATCH \ SKIN d'effacer le fichier music.xm, de creer un nouveau 
+    fichier texte que l'on renomme en music.xm, le nouveau fichier etant vide, 
+    aucune musique ne sera jou&eacute;. Mais la presence de ce fichier est indispensable 
+    pour la compilation du patch.</p>
+  <p align="left">&nbsp;</p>
+  <p align="left"><b>Resources et skins:</b></p>
+  <p align="left">Il est indispensable de respecter l'architecture des dossiers 
+    et sous-dossiers pour la compilation. </p>
+  <div align="left"> 
+    <pre align="left">+ BIN		// contient les compilateurs 
++ INCLUDE	// contient les fichiers .h necessaire pour la compilation<br>+ LIB		// contient les librairies .lib qui seront link&eacute; avec le patch<br>+ PATCH		// Emplacement de travail lors de la compilation<br>  - SKIN	// sous dossier de PATCH ou seront cherch&eacute; les resources graphique, Bitmap et musique lors de la compilation
+
+
+Les autres dossiers ne sont pas indispensables et contienent des exemples et des infos :
+
+
++ EXEMPLE	// exemple de rendu de patch sous differentes Skin et musique<br>+ DOC		// inclus les fichiers d'aides &agrave; l'utilisation de Graphical-PatchMaker<br>+ MUSIC		// contient des exemples de music XM selectionn&eacute;s pour leurs taille et qualit&eacute;s
++ GFX		// contient des sous dossier comprenant des exemples de resources complete pour des skins</pre>
+  </div>
+  <p align="left">&nbsp;</p>
+  <p align="left">Pour les skins le seul format de dessin pris en charge est le 
+    Bitmap (.bmp)</p>
+  <p align="left">Pour changer de Skin il suffit d'editer un fichier resource 
+    script (.rc) avec les bitmaps que l'on souhaite inclure, et de placer ces 
+    fichiers dans le dossier &quot;PATCH \ SKIN&quot;.</p>
+  <p align="left">Vous pouvez creer vos propre fichier .rc avec l'editeur de resource 
+    de votre choix, il faudra juste respecter imperativement le nom du fichier 
+    &quot;<b>patch.rc</b>&quot; et les noms des resource internes. Attention si 
+    les noms des resources et du fichier ne sont pas valides la compilation du 
+    patch sera impossible.</p>
+  <p align="left">Le plus simple etant de modifi&eacute; celui qui se trouve d&eacute;ja 
+    le dossier PATCH \ SKIN. Celui-ci &agrave; &eacute;t&eacute; creer avec l'editeur 
+    de Microsoft Visual-Studio. Vous aurez alors loisir de changer l'emplacement 
+    des controles, changer des bitmaps, inlure un icone pour le patch, changer 
+    le pointeur de la souris, modifier les parametres des controles comme par 
+    exemple rendre un boutton invisible mais qui sera actif si l'on clike &agrave; 
+    son emplacement sur le dessin.</p>
+  <p align="left">Voici l'architecture d'un fichier resource valide.</p>
+  <p align="left"><b>&quot;patch.rc&quot;</b></p>
+  <div align="left"> 
+    <pre align="left">+ patch.rc<br> +Bitmap<br>  -IDB_ABOUT 	(Bitmap du boutton ABOUT)<br>  -IDB_BITMAP1 	(Bitmap du Skin)<br>  -IDB_EXIT		(Bitmap du boutton EXIT)<br>  -IDB_PATCH	(Bitmap du boutton PATCH)<br> +Cursor<br>  -IDC_CURSOR1	(Pointeur de la souris quand celle-ci est enfonc&eacute; sur la fenetre du patch)<br> +Dialog<br>  -IDD_DIALOG	(Dialog de l'interface avec la position de chaque controle)<br> +&quot;MUSIC&quot;<br>  -ID_MUSIC		(La music XM qui sera jou&eacute;)
+</pre>
+    <p>Ces noms de resources sont constants et le patch s'en sert pour definir 
+      chaque &eacute;l&eacute;ment qui le compose, par contre libre &agrave; vous 
+      de nommer les fichiers qui le compose, le nom des fichiers des bitmaps importes 
+      peu du moment que vous faites bien correspondre avec l'identifiant de la 
+      resource exemple :</p>
+    <pre>IDB_ABOUT	&quot;c:\Mes documents\boutton_about.bmp&quot;
+
+</pre>
+    Pour le fichier music.xm celui-ci est gener&eacute; automatiquement par le 
+    PatchMaker, en fait apres avoir selectionn&eacute; la musique de votre choix 
+    sur votre disque, et avoir lanc&eacute; la compilation, le PatchMaker va copier 
+    ce fichier et placer la copie dans le dossier PATCH \ SKIN sous le nom de 
+    music.xm, il n'est donc pas n&eacute;c&eacute;ssaire de s'occuper de se fichier. 
+    Mais celui-ci doit etre present pour compiler le patch meme si vous ne mettez 
+    pas de music dans le patch. (voir section musique)</div>
+  <p align="left">Les bouttons ont par defaut l'attribution d'un bitmap respectif, 
+    pour ne pas afficher le bitmap sur le boutton il suffit de decocher l'option 
+    'Bitmap', pour rendre un bouttin invisible il faut cocher l'option 'Owner 
+    draw' et mettre l'option 'Transparent'. Bcp d'autres possibilit&eacute;s sont 
+    possible via un editeur de resource. </p>
+  <p align="left">Pour ajouter un icone au programme, Il suffit juste de creer 
+    un nouvel icon et de sauvgarder le fichier path.rc et de lancer la compilation 
+    du patch, l'icone sera automatiquement associer au programme.</p>
+  <p align="left">&nbsp;</p>
+  <p align="left"><b>En d&eacute;tails :</b></p>
+  <p align="left">Le Bitmap principal du Skin represente le dessin et la forme 
+    de l'interface du patch. Les regions invisiblent sont automatiquement creer 
+    par le patch, qui decoupe sa forme selon le bitmap. Les regions invisibles 
+    sur le bitmap sont defini par une couleur, cette couleur est le pixel 0,0 
+    situ&eacute; en haut &agrave; gauche du Bitmap, c'est &agrave; dire que tout 
+    les pixel present sur le bitmap qui auront la meme couleur que le pixel 0,0 
+    deviendrons transparents.</p>
+  <p align="left">Le fond du controle qui affiche les infos et le about du patch 
+    est lui aussi invisible, le text s'affichera directement sur le dessin, Il 
+    est donc &agrave; prevoir sur le Bitmap l'emplacement de ce text et de pourquoi 
+    pas alors creer un fond special, comme un ecran, etc..</p>
+  <p align="left">Pour le fond du scrolling il n'est actuellement pas possible 
+    de le mettre en invisible dans cette version de Graphical-PatchMaker. Il est 
+    donc pr&eacute;f&eacute;rable de dessiner un emplacement pour ce controle 
+    sur le bitmap. La couleur de fond est determin&eacute; via le patchMaker. 
+    Generalement il suffit de dessiner sur le bitmap un emplacement avec la meme 
+    couleur de fond que le scrolling. pour qu'il se fonde avec celui-ci.</p>
+  <p align="left">Le travail du PatchMaker est de generer des sources en language 
+    C qui seront compil&eacute;es par differents outils afin d'obtenir un unique 
+    executable.</p>
+  <p align="left">Le patch est g&eacute;n&eacute;r&eacute; avec les programmes 
+    suivant :</p>
+  <table width="75%" border="1" align="left">
+    <tr> 
+      <td> 
+        <div align="center">LCC</div>
+      </td>
+      <td> 
+        <div align="center">Compilateur language C</div>
+      </td>
+    </tr>
+    <tr> 
+      <td> 
+        <div align="center">RC</div>
+      </td>
+      <td> 
+        <div align="center">Compilateur de resource script (.RC) utilis&eacute; 
+          avec Masm</div>
+      </td>
+    </tr>
+    <tr> 
+      <td> 
+        <div align="center">LINK</div>
+      </td>
+      <td> 
+        <div align="center">Linker de Masm</div>
+      </td>
+    </tr>
+    <tr> 
+      <td> 
+        <div align="center">UPX</div>
+      </td>
+      <td> 
+        <div align="center">Compresseur d'exe</div>
+      </td>
+    </tr>
+  </table>
+  <p align="left">&nbsp;</p>
+  <p align="left">&nbsp;</p>
+  <p align="left">&nbsp;</p>
+  <p align="left">&nbsp;</p>
+  <p align="left">&nbsp;</p>
+  <p align="left"><b>Details Techniques :</b></p>
+  <p align="left">La taille finale du patch est fonction des bitmaps et de la 
+    musique, le Patch est automatiquement compress&eacute; lors de sa construction 
+    ce qui permet de reduire la taille de ceux-ci, voici quelques valeurs approximatives 
+    pour donner un ordre d'id&eacute;es :</p>
+  <p align="left">&nbsp;</p>
+  <table width="72%" border="1" align="left">
+    <tr> 
+      <td width="59%"> 
+        <div align="center">-</div>
+      </td>
+      <td width="35%"> 
+        <div align="center">Non-Compress&eacute; </div>
+      </td>
+      <td width="6%"> 
+        <div align="center">Compress&eacute;</div>
+      </td>
+    </tr>
+    <tr> 
+      <td width="59%"> 
+        <div align="center">Exe seul avec toutes les fonctions</div>
+      </td>
+      <td width="35%"> 
+        <div align="center">22 ko</div>
+      </td>
+      <td width="6%"> 
+        <div align="center">12 ko</div>
+      </td>
+    </tr>
+    <tr> 
+      <td width="59%"> 
+        <div align="center">Bitmap seulement (skin de base)</div>
+      </td>
+      <td width="35%"> 
+        <div align="center">101 ko</div>
+      </td>
+      <td width="6%"> 
+        <div align="center">3 ko</div>
+      </td>
+    </tr>
+    <tr> 
+      <td width="59%"> 
+        <div align="center">Musique seulement (base)</div>
+      </td>
+      <td width="35%"> 
+        <div align="center">35 ko</div>
+      </td>
+      <td width="6%"> 
+        <div align="center">12 ko</div>
+      </td>
+    </tr>
+    <tr> 
+      <td width="59%"> 
+        <div align="center">Total compil&eacute; (exe + Bitmaps + musique)</div>
+      </td>
+      <td width="35%"> 
+        <div align="center">158 ko</div>
+      </td>
+      <td width="6%"> 
+        <div align="center">25 ko</div>
+      </td>
+    </tr>
+  </table>
+  <p align="left">&nbsp;</p>
+  <p align="left">&nbsp;</p>
+  <p align="left">&nbsp;</p>
+  <p align="left">&nbsp;</p>
+  <p align="left">Le ratio de compression depend directement des fichiers certains 
+    se compresse mieux que que d'autre selon la structure interne du fichier. 
+    Pour une taille minimale, il convient d'obtenir des bitmaps les plus petits 
+    possible et les plus compressibles, le bitmap etant un format assez lourd 
+    mais facilement compressible.</p>
+  <p align="left">Pour reduire la taille des bitmaps, il faut jouer sur 2 choses 
+    : dimensions du dessin et nombre de couleurs.</p>
+  <p align="left">Pour optimiser les dimension du dessins, il faut decouper un 
+    rectangle autour de la forme du skin, en essayant de se rapprocher le plus 
+    du bord afin de diminuer un maximum la hauteur et largeur du Bitmap. Le nbr 
+    des couleurs fais chutter considerablement la taille du bitmap, il faudra 
+    juger qualit&eacute; et nbr de couleurs pour trouver le bon compromis. n'hesitez 
+    pas &agrave; reduire a 256 voir 16 couleurs minimum c'est deja largement sufisant 
+    pour un skin standard (le skin de base est en 16 couleurs), eviter de dessiner 
+    des skins trop complex avce beaucoup de couleurs diffrentes, moins y a de 
+    couleurs plus c'est petit :). </p>
+  <p align="left">Graphical-PatchMaker est en cours de developpement et il est 
+    possible que quelques bugs soient present.</p>
+  <p align="left"><b><a href="mailto:netix@gmx.fr">netix@gmx.fr</a></b></p>
+  <p align="left">&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+</div>

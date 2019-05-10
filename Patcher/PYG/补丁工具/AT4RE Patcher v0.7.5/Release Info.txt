@@ -1,0 +1,489 @@
+                                             AT4RE Patcher
+                                       Coded by Agmcz & Sn!per X.
+_____________________________________________________________________
+                                            Version History:
+_____________________________________________________________________
+AP v0.7.5:
+汉化作者：零下七度
+免费下载地址www.lx7d.com
+25-03-2017:
+[+] Sniffer files separated from GUI Patcher files.
+[+] Added Import list to Offset Patch.
+[+] Added Import list from clipboard to Offset Patch.
+[+] Added auto detection for Patcher and Sniffer Resources files.
+[+] Added variable "%s" for external packer command.
+[+] Enhanced double clicking on main list.
+[x] Fixed missing code in region routine for Serial Sniffer.
+[x] Fixed All cases with 'Target file was not found' error message.
+[x] Fixed All cases with 'Empty/Nothing Checked' warning message.
+[x] Fixed All cases with 'File is not same structure' warning message.
+[x] Fixed All cases with 'Check File CRC32' option does not work in modes: DEC' error message.
+[x] Fixed All cases with 'Check File Version' option does not work in modes: Less than/Greater than' error message.
+[x] Fixed bug in x64bit loader.
+[x] Fixed missing code in External Packer> Clear button.
+[x] Other bug fixes and enhancements..
+[*] Settings version upgraded to version 5.
+_____________________________________________________________________
+AP v0.7.4:
+18-03-2017:
+[+] Added Check Old (original) bytes for Offset Patch.
+[x] Fixed Load animated Cursor on WinXP OS.
+[x] Fixed Ripple Effect.
+[x] Fixed Option Use Ripple Effect.
+[x] Fixed rare crash in Offset Patch when saving project after comparing two similar files.
+[X] Fixed the Appearance of "Success/Failed Patching" Messages for some cases.
+[X] Fixed bug in GUI/GFX Patcher's target names list.
+[X] Fixed bug in uPPP2AP Tool (New version released).
+[*] Project version upgraded to version 8.
+_____________________________________________________________________
+AP v0.7.3 Beta
+11-03-2017:
+[+] Added two plugins for OllyDbg 1.10, 2.01:
+    To export patch data to be used with AP.
+    AP>Target Patch>Offset Patch>[Right Click on List]>Load Patch Data.
+[+] Added Remove Certeficate to GUI/GFX Patchers.
+[+] Added Check file version to Target Check.
+[+] Added Check file bits to Target Check.
+[+] Added TopMost Option to AP main window.
+[+] Added Close curently opened project.
+[x] Fixed Check signature.
+[x] Minor Bug fix in load font.
+[x] Fixed Bug in attach files.
+[x] Fixed Crash popup
+[x] Fixed Placeholder.
+[x] Fixed Bug in GFX Patcher (in LEFT,RIGHT Buttons).
+Enhancements:
+[*] MOD Chiptunes sound enhanced in GUI/GFX Patchers.
+[*] GUI patcher window now is centered.
+[*] Project version upgraded to version 7.
+[*] Settings version upgraded to version 4.
+[*] Various bug fixes and enhancements..
+Notes:
+  Please note that Resources folder is updated, do no use old versions.
+_____________________________________________________________________
+AP v0.7.2 Beta
+10-02-2017:
+[+] Added New macros to retrieve:
+	Get current username directory (%UserNameDir%).
+	Get desktop directory (%Desktop%).
+	Get All Users directory (%AllUsers%).
+	Back to previous directory (..\).
+[+] Added Option: "Ask user to overwrite the file if it's already exists"
+    to Attach Files.
+[x] Fixed serious bug in loader:
+	Offset patch was not working! since..
+Enhancements and Tweaks:
+  [*] Attach Files GUI rearranged and enhanced.
+  [*] Settings.pat changed to Settings.aps
+  [*] Project.apf changed to Project.app
+  [+] New Icons for APS and APP were added.
+  [+] New AP icon and logo were added.
+  [+] Project version upgraded to version 6
+      Older versions not yet supported (may will be added later).
+  [+] Settings version upgraded to version 3
+      Olders versions no longer supported.
+Moving to final version AP v0.7.3 soon.
+_____________________________________________________________________
+AP v0.7.1 Beta
+04-02-2017:
+[+] Added option to patch readonly files.
+[+] Added option to try patching used file.
+[+] Added Command Line Support for GUI/GFX Patcher:
+     Usage: 'PATCHEREXE' [command] [options]
+   Command:
+     /silent or /s : If not defined, the program will run in GUI/GFX mode.
+     /backup or /b, /nobackup or /nb: if not used, user defined will be used instead.
+     /Softwareid : Index of the target software that will be patched.
+   Options:
+     /help or /h: Shows the available commands and options.
+     /softwarelist or /sl : Shows the target sofwares names list with their ID's.
+
+[+] More faster backup creation for patched files.
+[x] Fix time restore: GUI enhanced in AP>Target Patch>Target Options>Restore Time.
+[x] Fixed crash occurs sometimes when stop playing SID modules.
+[x] Fixed Bug: Ripple Effect was disabled by a mistake in GUI Patcher.
+[+] Few improvements and bug fixes.
+_____________________________________________________________________
+AP v0.7 Beta
+03-01-2017:
+[+] Added Multiple Software Patcher.
+[+] Added Support for 64Bit to Registry Patch.
+[+] Added Serial Sniffer:
+	[+] Supporting 32Bit Aplications.
+	[+] Supporting 32Bit Registers (EAX, ECX, EDX, EBX, ESP, EBP, ESI, EDI).
+	[+] Supported Serial Types:
+ 		 - Ansi.
+ 		 - Unicode.
+	[+] Supporting Serial Check:
+ 		 - Serial Length.
+ 		 - Serial Format.
+	Note: Serial Sniffer Options is Patcher Alike, except few things are changed a litle bit!.
+[+] Added Support for WOW64 File System Redirection.
+[+] Added Hosts File Patcher.
+	- IP Address Support.
+	- Hostname Support.
+	- Comments Support.
+[+] Added Fix PECheckSum Option.
+[+] Added Ripple Effect to Patcher and Serial Sniffer Window.
+[+] Added Change Patched File Attrubits (ReadOnly, Hidden, System File).
+[+] Added Save Project Defaut file name.
+[+] Added Software List Selction to:
+		- Target Options.
+		- Attach Files.
+[+] Added PopupMenu to easier insert macros.
+
+[+] Project File upgraded to v0.5 (Older versions not supported anymore).
+[+] Added preview for the currently used cursor.
+[+] Info Text Moved to Project.apf
+[+] Added Region Maker:
+	- Auto Generate Region Data.
+	- Save Generated Region to file.
+[+] Added Check occurance in S and R.
+[+] Added Auto Select the patcher file in explorer after creating it.
+[+] Added more hints to Settings Info Text.
+[+] Added Visit Button to Website link.
+[+] Added ProgramW6432 Macro to macros list. 
+[+] Added preview for cursor.
+[+] Added saved coordinates options for Main and Log windows at exiting.
+[+] Added Option to change 'Successful Patching :)' text.
+[+] Added option to integrate (embded) info with project.
+[+] Added Option to Start Patcher with backup button checked.
+[+] Added option to Autosave loaded project on exiting application.
+[+] Added reset font button.
+[+] Added option to change info color in patcher info-->Info.
+[+] Added save output folder path to settings file.
+[+] Added show last project path option.
+[+] Addedd Option to change target file Created, Modificed 
+	and last access time in Target Options window.
+[+] Added select exe file or all files in patcher target selection.
+[+] Added option to keep patching the target file when someting get wrong.
+[+] Various options and enhancements have done and forgotten to be noted!..
+
+Performance Enhancements:
+[+] Fast compare and generate for large file.
+[+] Project and Settings Structres and headers have been rewritten
+    for better handling and faster loading.
+[+] Settings file Upgraded to v2 with a lot of tweaks.
+[+] Enhanced handling hex values when entering or typing it.
+
+GUI Patcher:
+[+] Added sound effects.
+[+] Added Transparent Edges to GUI Scroll Text.
+[+] Added Region support for GUI Patcher.
+[x] Fixed Detection Modules for Skn File.
+[x] Fixed multiple bugs in Loader.
+[+] Now skin data (music, font, icon, cursor..) can be used with GUI patcher.
+
+Skinned Patcher:
+[+] Added Left and Right buttons to select between softwares for mulitple software patch.
+[+] TopMost are c form Skin .
+
+Loader:
+[+] Added Option to Select a Specified Icon.
+
+Skin Builder:
+[+] Improved capturing screenshot.
+[+] Add New Buttons (Left and Right / Up and Down) for Multi Software Patch.
+
+Fixed Bugs:
+[x] Various bug fixes in Loader.
+[x] Fixed a rare error occurs sometimes when generating pattherns.
+[x] Fixed a crash occurs when patching file restore time.
+[x] Fixed a crash occurs when double clicking patch button in skinned patcher.
+[x] Fixed error occurs when creating patch.exe in readonly path or
+    there is a file with same name and its openned.
+[x] Fixed error in log window.
+_____________________________________________________________________
+AP v0.6.3
+01-01-2016:
+[+] Added PopupMenu to easier insert macros.
+[x] Fixed Bug in Attach Files.
+[*] Now AP Skins comes in a separated archive.
+_____________________________________________________________________
+AP v0.6.2
+25-11-2015:
+[+] Enahnce patch an existing process routine.
+[+] Fixed crash when execute patcher cause by loading the resource font.
+[+] Fixed bug in FadeIn/FadeOut speed.
+[x] Fixed getting imagebase of existing process for some pe files.
+_____________________________________________________________________
+AP v0.6.1
+31-10-2015:
+[+] Added drag and drop support to project file over the on main list.
+[x] Serious Bug Fixed in main list popup menu:
+        rename option should'nt appear for items except Target xx, 
+        and because of this bug (appears for all) any item(s) renamed
+        except specified will be ignored (in v0.6) so if any user renamed 
+        item(s) in the main list except Target xx so those items will be 
+        invalid in the project file and those items will be ignored and wont
+        be loaded next time the user load it.
+_____________________________________________________________________
+AP v0.6:
+22-10-2015:
+[!] Search and Replace:
+     [+] Added wildcard support (in patcher).
+     [+] Added pattern patching flags (all instances, 1, 2..).
+     [+] Added comment to pattern.
+     [+] Added Auto Convert Pattern to ASCII in List Item Hints.
+     [+] Now, User pattern inputs are fully checked.
+     [+] Pattern Automatic Generation are Enhanced.
+     [x] Fixed pattern length in Search and Replace.
+[+] Added Support for Modules:
+       ASC Sound Master (ASC).
+       Flash Tracker (FLS).
+       Fast Tracker (FTC).
+       Global Tracker (GTR).
+       Sound Tracker (STC).
+       Sound Tracker Pro (STP).
+       Pro Sound Creator (PSC).
+       Pro Sound Maker (PSM).
+       Pro Tracker 1 (PT1).
+       Pro Tracker 2 (PT2).
+       Pro Tracker 3 (PT3).
+       SQ-Tracker (SQT).
+       ST-Sound files (YM).
+       ASM Music Editor (ASC).
+       Emulators files (PSG).
+[+]  Added many samples for the newly supported modules.
+[+] Added Windows Check to Patcher/Loader:
+     [+] If windows not supported inform the user that it is.
+     [+] If windows not supported ask the user if he wants to run anway.
+[+] Added Support to Skn v0.5 and the new v0.6 Skins.
+[+] Project File upgraded to v0.4 (Old versions are still supported).
+[+] Added Automatic Detection for Tools in Main Menu.
+[+] Added Clear and Clear All to Main List.
+[+] Added Full Path View to Items Hints.
+[x] Fixed Skn Icon was not used when user not choose
+      an external icon and GUI Patch are selected.
+[x] Fixed Target Path.
+[x] Various bug fixes and enhancements..
+
+Patcher:
+[+] Fixed checking target if is running.
+[x] Minor bug fixes and enhancements..
+_____________________________________________________________________
+v0.5:
+18-09-2015:
+[+] Added Patch Types:
+    - Any File Types.
+    - Portable Executable (EXE).
+    - Dynamic Library (DLL).
+[+] Added Patch Modes:
+    - File Offset.
+    - Virtual Address (VA).
+    - Relative Virtual Address (RVA).
+[+] Added Support for 64bit Loaders (Still under beta testing).
+[+] Project.apf upgraded to v0.3, Old projects (v0.2) still supported.
+[+] Added Signature for Settings.pat file
+    now no more crash when using old Settings files with newer version of AP.
+[+] Added Detection for New Font (OTF).
+[+] Added Detection for Region (RGN).
+[+] Added Detection for 32bit and 64Bit PE Files (EXE, DLL).
+[+] Added More checking routines before creating the Patch/Loader.
+[+] Added Highlight colors (Black=OK, Red=Error) to List Items.
+[+] No longer saving regfile to disk > Now its loaded directly to memory.
+[x] Fixed An Error appears rarely when showing About Form.
+[x] Fixed crash happen sometimes when Loading Font of Skin in AP.
+[x] Fixed TTF, FON signatures detection.
+[x] Fixed some spellings in AP.
+[x] Fixed error happen in Registry Patcher when user
+    click Reload and the reg-file does not exists.
+[x] Fixed 'Test Font' Button and Font Styles was not applied. 
+[x] Fixed Bug Happen rarely When Generating Patterns in Search And Replace.
+[x] Fixed few options was not saved in project.apf.
+[x] Fixed an error when loading projects.
+    and many more improvements, enhancements and bug fixes..
+
+Patcher:
+[+] Added Transparent Edges to Scroll Text Patching Result.
+[+] Patching Enahaced, now should be are more faster.
+[x] Fixed Bug when Killing Target Process: 
+    Before: ¤ Process was killed without checking its path!.
+            ¤ All Process have the same target file name will be killed.
+    Now   : ¤ Process is killed if its name and path its same as Target File.
+_____________________________________________________________________
+v0.4:
+04-09-2015:
+[+] Added patcher/loader requires NFO file to run.
+[+] Added do not run if the NFO file is modifed (patcher/loader).
+[+] Added support for SPC Music (SNES-SPC700 Sound File).
+     03 SPC Samples are included in the archive (From Games: Killer Instinct, Asterix).
+[+] Added support for ST-Sound File (YM, 03 Samples are included in the archive).
+[+] No longer using EXEFILE RCDATA Resources!.
+[x] Fixed BMP Detection.
+[x] Fixed bug with assocaite files.
+[x] Fixed bug in loader imagebase detection.
+[x] Fixed crash with PE files detection.
+[x] Fixed load/save project. (now upgraded to v0.2).
+[!] Project files v0.1 are no longer supported.
+
+Skin Builder v0.4:
+[+] Added Support for SPC, YM Modules.
+[x] Fixed FadeIn/FadeOut speed issue.
+[x] Fixed bug in v2m Player.
+[x] Fixed a crash happen when droping a font under Windows 10.
+_____________________________________________________________________
+v0.3 Beta 02:
+03-08-2015:
+  Due to the lack of time for programming, improving and testing
+  so here is a quick release of AP v0.3:
+
+Added test skin with SB.
+Added wildcard support for S&R in Loader.
+Added run only one instance of application (Mutex).
+Added register assiciated file types.
+Added do not notify when list is empty.
+Added more detailled options for UPX compression.
+Added support for multiple setting files support.
+Added Icons for PAT & APF (Assiciated file types).
+Fixed compression issue (File path was not passed correctly to packer).
+Fixed crash happen when no output folder is selected (Admin check issue).
+Fixed few options was not saved into settings file.
+
+    Any ideas, suggestions or a bug report are welcome,
+      don't hestiate time to contact us!.
+_____________________________________________________________________
+v0.3 Beta 01:
+19-07-2015:
+Creator Side:
+[+] Added Loader (History Bellow).
+[+] Added Restore Original File Date&Time After Patching (Creation Time, Last Access/Modified Time).
+[+] Added MD5 Hash Check (Automatically Calculated).
+[+] Added Support for (MOD, IT, S3M, MTM, UMX, MID & SID) Modules.
+[+] Added Support for Placeholders in Registry Patch.
+[+] Added Save / Load Project.
+[+] Added Load last saved/loaded project at starting application.
+[+] Added a detailled list about the loaded Skin Items (Sizes, Types..).
+[+] Added a Log window for more detailled information.
+[+] User now is chosen betwen using a smaller XM player or the biger one.
+[+] Added tray icon option.
+[+] Added ovedrwrite ouput file option.
+[+] Added execute output folder after finishing option.
+[+] Added execute output file after finishing option.
+[+] Added hints for several components.
+[x] Fixed an output folder problem.
+[x] Fixed a compression issue.
+[x] Fixed some mis-spelling and other phrases to have more clearer meaning.
+[x] Fixed delete item with del key in snr.
+[x] Fixed a bug happen when saving settings.
+[x] Fixed an empty skn resource was added to patcher when GUI Mode is used.
+[x] Fixed an error occurs whith snr when changes at EOF.
+[=] Automatic Uppercase in add manual pattern.
+[=] Various Tweaks done to settings file.
+    and many more bug fixes and enhancements..
+
+Patcher Side:
+[x] Fixed Music Button.
+[v] If traget file was not found, an open dialog is excuted showing the Initial directory.
+
+Loader Options:
+[+] Specific RVA Patch (Multiple Bytes).
+[+] Search and Replace (Multiple Bytes).
+[+] Registry Patcher.
+[+] Added Target-Auto Detection:
+    From a Sepecifc Path (with macros).
+    From a Specific Registry Key.
+[+] Support for Patching Loaded DLLs Modules.
+[+] Added Patch an Existing Process.
+[+] Added File Check (CRC32, File Size and MD5).
+[+] Added Set Debug Privilege.
+[+] Added Wait for first window.
+[+] Added Silent Loader.
+[+] Added Use Target Main Icon.
+[+] Timed Loader with Delay (ms) and Timeout (s) Options.
+    And many more..
+___________________________________________________________________
+v0.2 Build 503:
+03-05-2015:
+
+Creator Side:
+[!] Fixed bug when loading modules.
+[+] Date is auto updated now.
+[!] Fixed Target Path.
+[+] Added Delete List Item with [Suppr/Del] Keyboard Key.
+[!] Fixed Compression with UPX.
+[!] Fixed an App crash when skins with BMP Images used.
+[+] Added Offset Patch Manual.
+[!] Fixed Target Patch. 
+
+Patcher Side:
+[!] Fixed Offset Patch.
+[!] Fixed Search and Replace Patch.
+
+Skin Builder:
+[!] Fixed a bug in Drawing Text: wasn't totally appear.
+[!] Fixed Success/Fail Patching Blinking Text: wasn't appear normally.
+[!] Fixed a bug: when no module used Music Button wasn't disabled.
+[!] Fixed a bug with skins that have JPG Images: wasn't fully drawen.
+_____________________________________________________________________
+v0.1 Initial Release:
+22-04-2014:
+Creator Side:
+[+] Multi-File Patcher.
+[+] Offset Patcher.
+[+] Search and Replace Patcher.
+[+] Registry Patcher.
+[+] Target File Check: CRC, File Size and user defined signature.
+[+] Auto Detect From File Path/Registry.
+[+] File Installer with macros enabled.
+[+] Skin Support.
+[+] GUI Fully Changed (More friendly user interface).
+[+] No need to keep Overly in Packer.
+[+] Code fully rewritten.
+[+] Changed the way Data Written to patcher:
+[+] No more writing data to EOF (end of file)
+    now data is written in Resources.
+
+Patcher Side:
+[+] Skin Supported Images: JPG, PNG, BMP ...
+    Skin Supported Fonts : TTF and FON.
+[+] Added Support for Animated Cursors.
+[+] Scroll Text more smoother.
+[+] Fixed website link click.
+_____________________________________________________________________
+v0.1 Initial Release:
+27-11-2014:
+[+] Added Attach Files (a.k.a File Installer).
+    Including Macros Support.
+[+] Added Registry Patcher.
+[+] Added Support for most of fonts including: .TTF, .FON..
+[+] Added Check File Signature on Patching.
+[+] Added V2M Music Support.
+[+] More Faster File Compare (100x).
+[+] FileDetector.dll Integrated with Patch Creator (as internal Unit).
+[+] GUi Enhanced. 
+[+] Fixed Some bugs.
+[+] Alot of Tweaks.
+_____________________________________________________________________
+v0.1 Initial Release:
+14-11-2014:
+[+] File Size & CRC Check.
+[+] User Can Use Custom Fonts.
+[+] Target File Auto-Detection [From Registry].
+[+] Some Tweaks in The Creator GUI.
+[+] Terminate Target If it's Running. 
+[+] Added More Options..
+[+] Alot of Tweaks with Patcher.
+[-] Fixed Bug When Adding Icons.
+[-] Fixed Bug In GUI Under Windows XP.
+_____________________________________________________________________
+v0.1 Initial Release:
+09-11-2014:
+[+] Packing Patcher with External Packer with Command.
+[+] Run Patcher using Admin Rights.
+[+] Few Bugs Fixed.
+[+] New Option: Delete Chosen files.
+[+] New Option: Choose UPX Compression Ratio.
+_____________________________________________________________________
+v0.1 Initial Release:
+07-11-2014:
+Release Info:
+[+] Multiple Files Offset Patcher.
+[+] Ability to Add Icon.
+[+] Ability to Add XM Chiptune.
+[+] Simple Scroll Text.
+[+] User Customized Logo.
+= Very Simple Multi-Files Patcher, Dozen of bugs but expect better later. 
+
+First release, the best will come later, do not judge what you see! but expect more,
+if you see you can do better, so do not hestiate time and start yours.

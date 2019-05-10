@@ -1,0 +1,57 @@
+                        AT4RE Patcher
+                  Coded by Agmcz & Sn!per X
+_____________________________________________________________________
+                        Main Features:
+_____________________________________________________________________
+[+] Support for Multiple Software Patcher.
+[+] Support for Patch Modes:   
+    - File Offset.
+    - Virtual Address (VA).
+    - Relative Virtual Address (RVA).
+[+] Hosts File Patcher.
+[+] Serial Sniffer.
+[+] Support for 32Bit and 64bit Registry Values.
+[+] Support for 32Bit, 64bit PE Files (EXE, DLL).
+[+] Support for Multiple Files Offset Patch.
+[+] Support for Multiple Files S&R Patch.
+[+] Support for Advanced S&R Patcher.
+[+] Support for Windows Check.
+[+] Support for Attach Files (File Installer).
+[+] Support for Registry Patch.
+[+] Support for Restore Original File Date&Time After Patching.
+[+] Support for File Size, CRC32, MD5 Hash Check.
+[+] Support for Scroll Text with transparent edges.
+[+] Support for XM, V2M, MOD, IT, S3M, MTM, UMX, MID, SID, SPC, YM, FTC, 
+                FLC, SQT, PT1, PT2, PT3, PSG, PSC, PSM, YM, GTR, STP
+                & ASC Modules.
+[+] Support for Skins (SKN) with PNG, JPG, BMP..
+[+] Support for most of fonts including: TTF, FON, OTF, WOFF, FNT.
+[+] Support for Windows Cursors and Animated Cursors (CUR, ANI).
+[+] Support for Windows Icons (ICO).
+[+] Support for Placeholders in Registry Patch.
+[+] Support for Save / Load Projects.
+[+] Support for Target File Auto-Detection [From File Path or Registry].
+[+] Support for UPX or External Packers with Commands.
+[+] Support for NFO (Patcher/Loader Require NFO to run).
+[+] Support for Patching Large Files.
+[+] Fast Loading and Patching.
+[+] Full Features Skin Builder.
+[+] Skin Converters.
+
+Loader Options:
+[+] Support for 32Bit, 64bit Loaders.
+[+] Support for Specific RVA Patch (Multiple Bytes).
+[+] Support for Search and Replace (Multiple Bytes).
+[+] Registry Patcher.
+[+] Support for  Target-Auto Detection From a Sepecifc Path (with macros).
+    From a Specific Registry Key.
+[+] Support for Patching Loaded DLLs Modules.
+[+] Support for Patching an Existing Process.
+[+] Support for File Check (CRC32, File Size and MD5).
+[+] Added Set Debug Privilege.
+[+] Added Wait for first window.
+[+] Support for Silent Loaders.
+[+] Timed Loader with Delay (ms) and Timeout (s) Options.
+
+    And many more..
+_____________________________________________________________________   

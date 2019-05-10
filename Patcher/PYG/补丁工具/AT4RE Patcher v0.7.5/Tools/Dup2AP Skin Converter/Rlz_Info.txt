@@ -1,0 +1,86 @@
+                        Dup2AP Skin Converter Coded by Agmcz and Sn!per X
+                     _______________________________________________________
+                    A small tool to convert Dup "RES" Skins to AP "SKN" Skins
+=======================================================================================================
+v0.2:
+22-10-2015:
+[+] Major Improvements in conversion Code.
+      - Old code removed, new code came..
+[+] Most of Dup Skins (.res) are supported now.
+[x] Corrected scrollText default direction .
+[x] Extract to a temperary dir are removed, 
+      Now all conversion done in memory.
+[x] Minor bug fixes and enhancements..
+=======================================================================================================
+v0.1 Build 102:
+19-10-2015:
+[X] Removed extract temp file, 
+    * Now convert an direct.
+[+] Improvement in conversion performance.
+[+] More support for "Skin.res".
+[+] Correction Writting Direction default ScrollText.
+[+] Fixed minor bugs.
+=======================================================================================================
+v0.1 Build 21:
+27-04-2015:
+[+] Added Support for Skin Builder v0.1 B422 and above.
+[+] Added External Font name to Skin Header for later use.
+[+] Fixed App Crash: When Background, Patch, Exit GFXs are missing.
+[+] Fixed few bugs and added some enhancements.
+
+[-] Font is Optional, If no font is selected, Resource Dialog font name will be used.
+
+[!] Skin Builder v0.1 B26 and older versions are no longer supported
+    since skin.skn Header has changed (Added Scroll Text Opaque, Font Name..).
+
+[!] Cursor are not supported yet, due to its header is broken,
+    and for the lack of documentations about the way how cursor is saved a resources files
+    so it will take some time till we can figure out about a solution to fix that.
+    "Cursors" is the nastiest thing i ever seen in the whole of that!!
+
+[!] Dup2AP.exe is not Compressed/Packed and should not be or it will not work.
+
+[!] You may wonder what is TmpDLGSnrx.exe?, its a temprary file that converts DLUsToPixels.
+    Dialog Unit To Pixels using MapDialogRect function for more info check MSDN: 
+    https://msdn.microsoft.com/en-us/library/windows/desktop/ms645502%28v=vs.85%29.aspx
+
+    you can delete it after the convertion is finished.
+____________________________________________________________________________________________________________
+Dup Patch/Exit BMP Button Structure:
+                 -----------
+Button_UP.BMP  : |   UP    |
+                 -----------
+                 -----------
+Button_OVER.BMP: |  OVER   |
+                 -----------
+                 -----------
+Button_DOWN.BMP: |  DOWN   |
+                 -----------
+
+AP Patch/Exit BMP/JPG/PNG Button Structure:
+All Images are merged into 1 Image in this way:
+                 -----------
+                 |   UP    |
+                 -----------      
+              /  -----------
+FULL_Button.BMP: |  OVER   |
+              \  -----------
+                 -----------
+                 |  DOWN   |
+                 -----------
+=======================================================================================================
+v0.1 Build 09:
+06_04_2015:
+[+] Patch/Exit BMP's (up.bmp, over.bmp and down.bmp) are merged into one image to fit AP requirements.
+[+] Added BMP To JPG Option for smaller Info.skn.
+[+] Region (RGN), Color Scheme (INI) and Font (TTF, FON) files are supported.
+
+[-] Icon is Optional, If no icon is selected, Resource icon will be used (if available).
+[-] Not all Color Scheme entries are token, converter uses only the needed.
+[-] Destination folder are automatically generated from RES file path, 
+    but user still can change the output folder.
+
+[!] Nothing are extracted to a temprary folder, everything is done in memory.
+[!] The resulting Info.skn conversion backward to res are not available ;)
+
+=======================================================================================================

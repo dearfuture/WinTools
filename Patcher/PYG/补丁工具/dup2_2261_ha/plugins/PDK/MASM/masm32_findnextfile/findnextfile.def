@@ -1,0 +1,5 @@
+LIBRARY
+EXPORTS
+DUP2_PluginInfo
+DUP2_EditPluginData
+DUP2_ModuleDescription
