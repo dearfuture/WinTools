@@ -1,2 +1,2 @@
 # WinTools
-My Tool Collection @ Winodws
+My Tool Collection @ Windows
