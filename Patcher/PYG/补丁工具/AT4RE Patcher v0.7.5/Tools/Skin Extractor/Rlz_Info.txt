@@ -1,0 +1,24 @@
+                 AP Skin Extractor Coded by Agmcz and Sn!per X
+            _______________________________________________________
+                   A small tool extracts AP Skin Contenents.
+
+=========================================================================================
+v0.2:
+22-10-2015:
+[+] Added Support to Skn v0.5 and the new v0.6 Skins.
+[+] Added Skin Details in the GUI.
+[+] Added Support to extract FTC, FLC, SQT, PT1, PT2, PT3, PSG, PSC, PSM, YM, GTR, STP, ASC..
+[x] Fixed detection for some internal skin data/file types.
+[x] Minor bug fixes and enhancements..
+=========================================================================================
+v0.1:
+23-04-2015:
+[+] Auto Detection Routine for Images (PNG, JPG, BMP, ICO), Cursors (CUR, ANI),
+    Modules (V2M, XM) and Fonts (FON, TTF).
+[+] Command Line Support: "Skin Extractor" [Skn File Path] [Extract Folder]
+    Extract Folder can be an empty string '' if you want to extract files
+    in Skin Extractor root folder.
+    For easier use: just drag and drop the SKN file over Skin Extractor.exe
+    file and all done.
+[!] Skins with different file signature or its version greater than 01 are not supported.
+========================================================================================= 

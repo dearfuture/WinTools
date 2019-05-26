@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeLite_Workspace Name="Libraries" Database="./Libraries.tags">
+  <Project Name="plugin_example" Path="plugin_example/plugin_example.project" Active="Yes"/>
+  <Project Name="plugin_example_patcherdll" Path="plugin_example_patcherdll/plugin_example_patcherdll.project" Active="No"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug" Selected="no">
+      <Project Name="plugin_example" ConfigName="Debug"/>
+      <Project Name="plugin_example_patcherdll" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Project Name="plugin_example" ConfigName="Release"/>
+      <Project Name="plugin_example_patcherdll" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>
